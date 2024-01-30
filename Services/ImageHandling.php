@@ -2,6 +2,7 @@
 
 namespace Gregwar\ImageBundle\Services;
 
+use AllowDynamicProperties;
 use Gregwar\ImageBundle\ImageHandler;
 use Symfony\Component\Config\FileLocatorInterface;
 use Symfony\Component\DependencyInjection\ContainerInterface;
@@ -14,6 +15,8 @@ use Symfony\Component\HttpKernel\KernelInterface;
  * @author Gregwar <g.passault@gmail.com>
  * @author Sullivan Senechal <soullivaneuh@gmail.com>
  */
+
+#[AllowDynamicProperties]
 class ImageHandling
 {
     /**
